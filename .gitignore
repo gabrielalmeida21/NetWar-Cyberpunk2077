@@ -1,0 +1,7 @@
+*.log
+db.sqlite3
+node_modules/
+archive/packed/
+tools/gen-map/out/
+.tools/
+dist/

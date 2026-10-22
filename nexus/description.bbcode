@@ -1,0 +1,155 @@
+[size=6][b]NET War — 0.6.0 Beta[/b][/size]
+
+[b]Jack in from your apartment and fight a territorial war across the NET.[/b]
+
+[quote][b]This is a beta.[/b] Everything described here is in the game and playable, but balance is still being tuned and some situations haven't been tested yet — most importantly, [b]removing the mod from a save that used it[/b]. Back up your saves, and please report bugs and balance feedback in the Posts or Bugs tab.[/quote]
+
+NET War turns V's home computer into a netrunner's terminal. Open a full-screen world map of the NET, breach corporate and gang nodes floor by floor in a netrunning system inspired by the Cyberpunk RED tabletop rules, collect daemons, defend your territory and stay off Netwatch's radar.
+
+Every breach action can be played as a [b]skill minigame[/b] — where your attributes, Interface and cyberdeck change how each minigame plays — or as a classic [b]d10 roll[/b].
+
+[line]
+
+[size=5][b]Features[/b][/size]
+
+[list]
+[*][b]Full-screen NET map[/b] of the world with 14 nodes, owned by Arasaka, Militech, Netwatch, Kang Tao, the Voodoo Boys, neutral networks — and two zones beyond the Blackwall.
+[*][b]Zoom levels:[/b] World, Region and City. Every node has 3 regions, and every region has 2–3 sites you can breach to weaken the parent node before the big attack.
+[*][b]A living network:[/b] factions attack each other and your nodes while you play. The network catches up with game time whenever you reconnect (up to 7 days).
+[*][b]Breaches as towers of floors:[/b] passwords, files, Black ICE, daemon caches and a Control Node at the bottom. Lobby floors, forks, per-faction architecture styles and random modifiers (rotating passwords, cold chamber, dense fog, trace echo).
+[*][b]Seven skill minigames[/b], one for each action: Backdoor, Eye-Dee, Zap, Slide, ICE defense, Control and Scan.
+[*][b]Cyberpunk RED-style rules:[/b] NET actions per turn from your Interface, ICE with Speed, Perception, Attack, Defense and REZ, special ICE effects, unsafe jack-outs.
+[*][b]Daemons:[/b] programs found during breaches. Equip them and fire them mid-breach using your cyberdeck's real RAM. Duplicates fuse into higher rarities.
+[*][b]Defenses and intel:[/b] build Password, Black ICE and Decoy layers on your nodes; scouting and breaching reveal enemy architectures.
+[*][b]NetWatch Bank:[/b] your network earnings, with withdraw and deposit to V's wallet.
+[*][b]Netwatch trace:[/b] push your luck and Netwatch strikes back, locking you out of the NET for 24 hours.
+[*][b]In-game tutorial[/b] with a practice mode for every minigame.
+[*][b]English and Brazilian Portuguese[/b], following the game's on-screen text language.
+[/list]
+
+[line]
+
+[size=5][b]Requirements[/b][/size]
+
+[list]
+[*][b]Cyberpunk 2077 [b]2.31[/b][/b]: Yes (the version it was built and tested on)
+[*][b][url=https://www.nexusmods.com/cyberpunk2077/mods/2380]RED4ext[/url][/b]: Yes
+[*][b][url=https://www.nexusmods.com/cyberpunk2077/mods/1511]redscript[/url][/b]: Yes
+[*][b][url=https://www.nexusmods.com/cyberpunk2077/mods/7780]Codeware[/url][/b]: Yes
+[*][b][url=https://www.nexusmods.com/cyberpunk2077/mods/4197]TweakXL[/url][/b]: Yes
+[*][b][url=https://www.nexusmods.com/cyberpunk2077/mods/107]Cyber Engine Tweaks[/url][/b]: Only for the optional debug panel
+[/list]
+
+[line]
+
+[size=5][b]Installation[/b][/size]
+
+[b]Vortex:[/b] click [i]Mod Manager Download[/i] and enable the mod.
+
+[b]Manual:[/b] extract the archive into your Cyberpunk 2077 folder (the one that contains [font=Courier New]bin[/font] and [font=Courier New]r6[/font]). You should end up with:
+
+[code]r6/scripts/NetWar/
+r6/tweaks/NetWar/
+archive/pc/mod/NetWar.archive[/code]
+
+The optional [b]debug panel[/b] goes to [font=Courier New]bin/x64/plugins/cyber_engine_tweaks/mods/NetWarDebug/[/font].
+
+[quote][b]Back up your saves[/b] before installing or removing the mod. NET War stores its network state inside your save file.[/quote]
+
+[line]
+
+[size=5][b]Getting started[/b][/size]
+
+1. Go to one of V's apartments and look at the computer. A [b]NetWar[/b] option appears next to the usual interaction.
+2. The full-screen map opens. The game stays paused while you're on it; [b]ESC[/b] closes it.
+3. Pick a node next to one of yours (you start with Night City) and press [b]JACK-IN[/b].
+4. Go down the tower to the Control Node and take the node.
+5. Open the [b]TUTORIAL[/b] tab any time for a full explanation, and to practice each minigame without any risk.
+
+[line]
+
+[size=5][b]How it works[/b][/size]
+
+[size=4][b]The map[/b][/size]
+[list]
+[*]Click a node to see its owner, control, floors, DV, ICE and reward.
+[*]You can only breach nodes next to one of yours. Blackwall zones hide their floors and DV until scanned.
+[*][b]Scan[/b] (costs 2 RAM) reveals hidden ICE and the node's architecture style.
+[*][b]Region[/b] and [b]City[/b] zoom show smaller nodes. Taking a region gives +15% control over its parent node and −1 DV when you breach it; a site gives +5%. A site requires its region to be yours.
+[/list]
+
+[size=4][b]Bank, RAM, trace and Interface[/b][/size]
+[list]
+[*][b]NetWatch Bank:[/b] files, rewards and daily income go here. Withdraw or deposit from the map. The bank pays for your defenses and is frozen during a Netwatch lockout.
+[*][b]RAM[/b] is your cyberdeck's real memory (the same as the HUD). Scanning and daemons use it, and it recovers on its own.
+[*][b]Trace:[/b] failures and ICE hits raise it; it drops over time. At 100%, Netwatch launches an offensive against your nodes and locks the NET for 24 hours.
+[*][b]Interface[/b] is your netrunner level in the mod: 2 + INT/4 + cyberdeck rarity (+2 with the Militech Canto Mk.6) + node bonuses. It sets your NET actions per turn (2 to 5).
+[/list]
+
+[size=4][b]The breach[/b][/size]
+[list]
+[*]Each node is a tower. The first two floors (lobby) only hold passwords or files.
+[*]Active passwords and Black ICE block the way down. Forks let you pick the right-hand path.
+[*][b]END TURN[/b] refreshes your actions, but any active Black ICE on your floor attacks.
+[*]Disconnecting with active ICE gives it one last attack. Losing all your session HP kicks you out, and you lose the daemons you collected in that breach. Getting kicked out inside the Blackwall hurts V for real.
+[/list]
+
+[size=4][b]The minigames[/b][/size]
+
+Use the [b]CHECKS[/b] button on the breach screen to switch between minigames and the d10 roll. The [b]YOUR NETRUNNER[/b] panel always shows what's helping you.
+
+[list]
+[*][b][b]Backdoor[/b] (password)[/b]: [b]Buffer sequence:[/b] pick codes alternating row and column to build the requested sequence inside your buffer. — Interface: shorter sequence · Technical Ability: bigger buffer · Intelligence: hints · Cyberdeck: time · Canto Mk.6: shows the true path in red · Worm daemon: hints on every step
+[*][b][b]Eye-Dee[/b] (file)[/b]: [b]Decode the header:[/b] chain blocks where each one starts with the character the previous one ended with. Corrupted blocks lead to dead ends. — Interface: shorter chain · Intelligence: next block highlighted · Technical Ability: free errors · Cool 8+: clock waits for your first click · Cyberdeck: blocks already placed
+[*][b][b]Zap[/b] (attack ICE)[/b]: [b]Ring rhythm:[/b] strike (click or SPACE) when the spinning marker is inside the zone. Red center = critical. — Reflexes: bigger zone · Cyberdeck/Canto: more laps · Blade daemon: second zone · Interface: more damage. ICE Defense and Speed work against you.
+[*][b][b]Slide[/b] (get past ICE)[/b]: [b]Scanner corridor:[/b] advance one lane at a time (click or SPACE) without being touched by the sweeping beams. — Interface: fewer lanes · Cool: slower beams · Intelligence: narrower beams · Cyberdeck/Canto: time · Cloak/Ghost: beams blink. ICE Perception works against you.
+[*][b][b]ICE defense[/b] (end of turn)[/b]: [b]Reflex:[/b] click the codes in order before the ICE strikes. Each mistake lets part of the blow through. — Reflexes: more time · Interface 10+: one fewer code · Body: less damage · Mirror daemon: blocks the attack outright
+[*][b][b]Control[/b] (control node)[/b]: [b]Power circuit:[/b] rotate pieces to link the source to the core. — Interface: smaller grid · Technical Ability: pieces locked in place · Intelligence: path hints · Cyberdeck/Canto: time · Overload daemon: +6 s
+[*][b][b]Scan[/b][/b]: [b]Sonar:[/b] click (or SPACE) when the echo crosses the band. Missing everything still reveals the usual floors; a perfect run reveals the whole tower. — Reflexes: wider band · Interface/Cyberdeck: slower echo · Intelligence: lower goal · Canto Mk.6: +1 pulse
+[/list]
+
+[size=4][b]Daemons[/b][/size]
+[list]
+[*]Found in daemon caches and as rewards for taking nodes. The AI Fragment only drops beyond the Blackwall.
+[*]Equip them in the [b]DAEMONS[/b] tab. In a breach, firing one is a free action that costs RAM.
+[*]The effect is the same at every rarity; higher rarity only lowers the RAM cost. Two duplicates fuse into the next rarity.
+[*][b]Blade[/b] (Zap +3 damage) · [b]Mirror[/b] (negates one ICE hit) · [b]Worm[/b] (easier passwords) · [b]Ghost[/b] (zero trace on the floor) · [b]Overload[/b] (+1 action) · [b]Anchor[/b] (emergency disconnect instead of being kicked out) · [b]AI Fragment[/b] (+3 Interface, but +2 trace per turn)
+[/list]
+
+[size=4][b]Architectures and defenses[/b][/size]
+[list]
+[*]Scanning a node reveals its architecture style. Breaching it records floors, depth and modifiers in the [b]ARCHITECTURES[/b] tab. Intel goes stale when a node changes hands.
+[*]Each of your nodes has 3 defense layers, paid from the bank: [b]Password[/b] (+2 defense), [b]Black ICE[/b] (+1, absorbs one attack) and [b]Decoy[/b] (35% chance to divert an attack).
+[/list]
+
+[line]
+
+[size=5][b]Languages[/b][/size]
+
+The mod follows the game's [b]on-screen text language[/b]: Brazilian Portuguese if the game is set to Portuguese, English for every other language. Switching the language in the game's settings switches the mod too. Older log entries keep the language they were written in. The optional CET debug panel is in Portuguese.
+
+[line]
+
+[size=5][b]Optional: debug panel (Cyber Engine Tweaks)[/b][/size]
+
+An optional CET window (opens with the CET overlay) to inspect the network, trigger breach actions, register any computer as an access point and adjust the simulation. It's meant for testing and is not needed to play.
+
+[line]
+
+[size=5][b]Compatibility[/b][/size]
+
+[list]
+[*]Built and tested on game version [b]2.31[/b].
+[*]The map screen reuses the game's arcade menu scene to get a flat, full-screen view. Arcade machines keep working normally.
+[*]It adds an option to computers inside V's apartments. Other mods that change those computers should be compatible, but this hasn't been tested with every mod.
+[/list]
+
+[line]
+
+[size=5][b]Credits[/b][/size]
+
+[list]
+[*]Netrunning rules inspired by [b]Cyberpunk RED[/b] by R. Talsorian Games. The ICE names, stats and minigames are original to this mod.
+[*]Built with [b]redscript[/b], [b]RED4ext[/b], [b]Codeware[/b] and [b]TweakXL[/b]. Thanks to their authors and to the CDPR modding community documentation.
+[*]Cyberpunk 2077 is a trademark of CD PROJEKT S.A. This is a fan-made mod, not affiliated with CD PROJEKT RED or R. Talsorian Games.
+[/list]

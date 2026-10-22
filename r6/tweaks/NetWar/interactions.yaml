@@ -1,0 +1,5 @@
+# NET War — texto da opção de interação no PC de casa (fase 3).
+# Clona o registro que o jogo usa para "Abrir" no computador e troca só o texto.
+Interactions.NetWarConnect:
+  $base: Interactions.OpenLaptop
+  caption: "NetWar"  # o texto exibido vem de NetWarConnectAction.SetCaption
